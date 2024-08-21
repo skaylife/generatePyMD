@@ -98,7 +98,7 @@ def get_project_and_apps(manage_py_folder):
 def generate_readme(manage_py_folder, requirements_path, project_name, apps, repo_name, description):
     readme_path = os.path.join(manage_py_folder, 'README.md')
 
-    with open(readme_path, 'w') as readme:
+    with open(readme_path, 'w', encoding='utf-8') as readme:
         if repo_name:
             readme.write(f'# {repo_name}\n\n')
             
