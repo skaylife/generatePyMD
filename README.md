@@ -6,7 +6,6 @@
 generateREADME/
     .gitignore
     main.py
-    main.spec
     README.md
     requirements.txt
 ```
