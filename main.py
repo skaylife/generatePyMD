@@ -123,6 +123,12 @@ def generate_readme(manage_py_folder, requirements_path, project_name, apps, rep
                 dirs.remove('env')
             if 'venv' in dirs:
                 dirs.remove('venv')
+            if '.git' in dirs:
+                dirs.remove('.git')
+            if 'build' in dirs:
+                dirs.remove('build')
+            if 'dist' in dirs:
+                dirs.remove('dist')
             if '__pycache__' in dirs:
                 dirs.remove('__pycache__')
             if 'migrations' in dirs:
